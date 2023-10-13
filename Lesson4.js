@@ -60,7 +60,17 @@ console.log(uppercaseSentance);
 
 //შეგიძლია გამოიყენო sort() ფუნქცია
 
-const sortArr = (arr) => {
+const sortByAge = (arr) => {
   arr.sort((a, b) => a.age - b.age);
   return arr;
 };
+
+const people = [
+  { name: "kaci1", age: 30 },
+  { name: "kaci2", age: 25 },
+  { name: "kaci3", age: 40 },
+  { name: "kaci4", age: 22 },
+];
+
+const sortedByAge = sortByAge(people);
+console.log(sortedByAge);
