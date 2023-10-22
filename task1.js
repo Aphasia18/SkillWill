@@ -8,7 +8,7 @@ function makeToys() {
   });
 }
 // remove if (status === "undefected")
-function sellToys(status) {
+function sellToys() {
   return new Promise((resolve, reject) => {
     if (Math.random() > 0.5) {
       resolve("Toy sold in shop");
@@ -40,15 +40,15 @@ function mySetTimeout(callback, delay) {
 
 // call each function with delay. If check is not passed then stop the code
 mySetTimeout(makeToys, 3000)
-  .then((status) => {
+  .then(() => {
     console.log("Toy is made");
     return mySetTimeout(deliverToys, 2000);
   })
-  .then((res) => {
+  .then(() => {
     console.log("Toy is delivered to store");
     return mySetTimeout(sellToys, 1000);
   })
-  .then((status) => {
+  .then(() => {
     console.log("Toy is sold in shop");
   })
   .catch((error) => {
