@@ -1,0 +1,14 @@
+{
+  "name": "first-npm-prj",
+  "version": "1.0.0",
+  "description": "npm project",
+  "main": "Task.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guga",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.11.0"
+  }
+}
