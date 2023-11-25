@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(243, 243, 243);
+}
+.column-wrapper {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  width: 385px;
+}
+.main-wrapper {
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+.task-column-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  border-bottom: 3px solid red;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+p {
+  border: 1px solid green;
+  border-left: 4px solid green;
+  border-radius: 5px;
+  margin: 15px 0 15px 0;
+  padding: 15px;
+}
+
+.add-btn {
+  background-color: white;
+  border: none;
+  font-size: 35px;
+  color: grey;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background-color: white;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.modal-main input {
+  height: 35px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.modal-main button {
+  padding: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.modal-main form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
